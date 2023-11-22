@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+   
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>today update</title>
 
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+   
+        
 
+  
     <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+      
         * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
-
-        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+        .container-fluid{
+            margin: auto;
+            width: 1360px;
+        }
+       
 
         .container {
             background-color: rgb(255, 255, 255);
@@ -25,67 +39,65 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
-            height: 300px;
+            /* height: 300px; */
             background-image: url(1.png);
         }
 
-
-        .logo1 {
-            width: 236.14px;
-            height: 45px;
-            margin-top: 13px;
-        }
-
-        .extension {
-            width: 15px;
-            height: 15px;
-
-
-        }
-
-        .navbar {
+        .navbar{
             display: flex;
-            justify-content: space-between;
-            padding: 0 30px;
-
+            justify-content: space-around;
+            align-items: center;
+            padding: 10px 30px 10px 30px;
+            cursor: pointer;
 
         }
 
-        .center ul {
-            display: flex;
-            gap: 10px;
+        .extension{
+         width: 11.5px;
+         height: 6.19px;
+         top: 9px;
+         left: 6px;
         }
 
-        .center ul li {
-            list-style: none;
-            margin: 0;
-            margin-top: 20px;
-            margin-right: 70px;
-            font-weight: 500;
+
+        .laptop{
             font-size: 16px;
-            font-family: 'Dancing Script', cursive;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .center ul li a {
-            text-decoration: none;
-            color: white;
-            margin-top: 15px;
+            font-family:Poppins;
+            font-weight: 500;
+            color:#FFFFFF;
 
 
         }
 
-        .contact {
-            border: 1px solid white;
-            background: transparent;
-            width: 10px;
-            height: 20px;
-            padding: 10px;
+        .contact{
+            border: 1px solid #F8F9FA;
             border-radius: 50px;
+            background: transparent;
+            padding: 2px 15px;
+            width: 97px;
+            height: 29px;
+            color: #F8F9FA;
+           
+
         }
 
 
-        .first h1 {
+
+        
+
+        
+
+      
+
+       
+
+   
+
+       
+
+       
+
+        .leftside h1 {
             font-family: 'Dancing Script', cursive;
             font-family: 'Poppins', sans-serif;
             font-size: 75px;
@@ -93,15 +105,24 @@
             color: white;
             margin-top: 112px;
             margin-left: 40px;
+            text-align: center;
         }
 
-        .first button {
+        .rightside button {
+
+            width: 116px;
+            height: 36px;
+            border: 1px solid#F8F9FA;
+            padding: 6px 12px;
             background: transparent;
-            color: white;
-            border: 1px solid white;
-            padding: 10px 10px;
             border-radius: 50px;
-            /* margin-left: 350px; */
+            color: #F8F9FA;
+            font-size: 12px;
+            font-family: Poppins;
+            font-weight: 400;
+            text-align: center;
+            margin-top: 16px;
+           
 
         }
 
@@ -115,38 +136,98 @@
             display: flex;
         }
 
+        .hamburger{
+            display: none;
+        }
+
+
+
+        @media (max-width:1061px) {
+            .navbar{
+            
+                align-items: center;
+            }
+         .navbar .laptop{
+            display: none;
+            
+
+
+         }
+         .navbar .hamburger{
+            display: block;
+         
+            font-size: 5vw;
+         }   
+        }
+
+
+        @media (max-width:950px) {
+            .leftside h1{
+              font-size: 8vw;
+              
+            }
+        }
+
+
+        @media (max-width:600px) {
+            .secondphase{
+                flex-direction: column;
+                }
+
+                .leftside h1{
+                    font-size: 16vw;
+                }
+            
+            .rightside{
+                margin-left: 34vw;
+                margin-top: 10px;
+            }
+            .rightside button{
+              width: 30vw;
+              font-size: 3vw;
+              height: 10vw;
+              margin-left: 65vw;
+              margin-bottom: 15vw;
+            }
+            .hamburger{
+                font-size: 30vw;
+            }
+        }
 
 
 
 
 
-        /*   second phase  */
+
+                                   /*   second phase  */
 
         .second {
-            width: 100%;
-
+           
             display: flex;
-            width: 1140px;
+            max-width: 100%;
             margin-top: 50px;
-            margin-left: 65px;
+            justify-content: center;
+           
+            }
+    
 
-
-        }
+       
 
 
         .left1 {
             height: 360px;
-            width: 50%;
-            margin-left: 13.5px;
+            max-width: 100%;
+            }
 
-
-
-        }
+        
 
         .right2 {
             height: 360px;
-            width: 540px;
-            Padding: 30px, 15px, 30px, 15px
+            max-width: 100%;
+            Padding: 30px, 15px, 30px, 15px;
+            margin-left: 10vw;
+    
+            
         }
 
 
@@ -156,19 +237,20 @@
             font-size: 43px;
             line-height: 57.2px;
             font-weight: 300;
-            font-family: 'Dancing Script', cursive;
-            font-family: 'Poppins', sans-serif;
+            font-family: Poppins;
             text-align: center;
             margin-top: 105px;
 
         }
 
         .left1 p {
-            font-family: 'Dancing Script', cursive;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 700;
+            margin-top: 57.2px;
+            font-family: Poppins;
+            font-weight: 300;
             line-height: 33.6px;
             text-align: center;
+            font-size: 26px;
+
 
 
 
@@ -176,62 +258,86 @@
         }
 
 
+        @media (max-width:1061px) {
+           .second{
+            flex-direction: column;
+           } 
+
+           .left1{
+            max-width: 100%;
+           }
+
+
+           .right2{  
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           }
+        }
+
+
+      
 
 
 
 
-        /* third phase */
+
+
+
+                                    /* third phase */
+
+
+
         .third {
-            width: 1140;
+            max-width: 100%;
+          }
 
-
-
-        }
-
-        .one h3 {
+        .aone{
             color: #98002E;
-            font-family: 'Dancing Script', cursive;
-            font-family: 'Poppins', sans-serif;
+            font-family: Poppins;
+            line-height: 33.6px;
             font-size: 30px;
             font-weight: 500;
-            margin-left: 95px;
+            margin-left: 85px;
             margin-top: 107px;
 
         }
 
-        .one p {
-            margin-left: 95px;
-            margin-top: 12px;
+
+        
+        .para1 {
+            margin-top: 40px;
+            margin-left: 85px;
             color: #454545;
-            font-family: 'Dancing Script', cursive;
-            font-family: 'Poppins', sans-serif;
+            font-family: Poppins;
             line-height: 34px;
             font-size: 22px;
             font-weight: 400;
 
-
         }
 
-        .two {
-            margin-top: 15px;
+        .one{
+            
+            margin-top: 40px;
+          }
+
+        .criticalpic {
+            margin-top: 40px;
+            margin-left: 85px;
         }
+          
 
+        .para2{
 
-        .green {
-            margin-left: 95px;
-        }
-
-        .third p {
-            margin-top: 15px;
-            margin-left: 95px;
-            margin-top: 12px;
+            margin-top: 40px;
+            margin-left: 85px;
             color: #454545;
-            font-family: 'Dancing Script', cursive;
-            font-family: 'Poppins', sans-serif;
+            font-family: Poppins;
             line-height: 34px;
             font-size: 22px;
             font-weight: 400;
-            margin-top: 15px;
+
         }
 
 
@@ -243,19 +349,17 @@
 
 
         .fourth {
-            width: 1140px;
-            height: 500px;
+            max-width: 100%;
             gap: 30px;
-
             margin-left: 95px;
             display: flex;
-            margin-top: 90px;
+            margin-top: 100px;
         }
 
 
         .boxes {
             width: 360px;
-            height: 500px;
+            height: 471px;
             gap: 15px;
 
 
@@ -264,11 +368,9 @@
         .single {
             font-size: 22px;
             font-family: 400;
-            font-family: 'Dancing Script', cursive;
-            font-family: 'Poppins', sans-serif;
+            font-family: Poppins;
+            line-height: 33.6px;
             color: #454545;
-
-
         }
 
         .double {
@@ -281,31 +383,32 @@
         /* fifth */
 
         .fifth {
-            width: 1140px;
-            height: 98px;
+            max-width: 100%;
+            height: 90px;
             margin-left: 95px;
-            margin-top: 100px;
+            margin-top: 130px;
 
         }
 
-        .fifth h3 {
+        .h3compulsory {
             color: #98002E;
-            font-family: 'Dancing Script', cursive;
-            font-family: 'Poppins', sans-serif;
+            font-family: Poppins;
             font-weight: 500;
             font-size: 30px;
             line-height: 33.6px;
+
         }
 
-        .fifth p {
-            font-family: 'Dancing Script', cursive;
-            font-family: 'Poppins', sans-serif;
+        .pcompulsory {
+           font-family: Poppins;
             font-weight: 400;
             font-size: 22px;
             line-height: 34px;
-            margin-top: 18px;
+            margin-top: 40px;
+        
 
         }
+        
 
 
 
@@ -356,34 +459,35 @@
 
 
         .seven {
-            margin-top: 20px;
+            margin-top: 80px;
             width: 100%;
             height: 266px;
             background-color: #F2F2F2;
             display: flex;
+            justify-content: center;
+            align-items: center;
+
 
         }
 
         .gas {
-           
-            width: 50%;
+
+           max-width: 50%;
 
         }
 
         .khay {
 
-            width: 50%;
+            max-width: 50%;
+            margin-left: 10vw;
 
         }
 
-        .gas p {
-            text-align: center;
-        }
+      
 
         .date {
 
-            font-family: 'Dancing Script', cursive;
-            font-family: 'Poppins', sans-serif;
+            font-family: Poppins;
             font-weight: 300;
             font-size: 16px;
             margin-top: 50px;
@@ -394,10 +498,11 @@
             font-weight: 400;
             font-size: 18px;
             line-height: 28px;
-            color:#454545;
+            color: #454545;
+            margin-left: 3vw;
         }
 
-        .text{
+        .text {
             width: 400px;
             background-color: #ffff;
             height: 100px;
@@ -406,91 +511,100 @@
             margin-top: 50px;
         }
 
-        .btn button{
+        ::placeholder{
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 19;
+        }
+
+        .btn button {
             width: 160px;
             height: 36px;
             border-radius: 50px;
             padding: 6px, 12px, 6px, 12px;
-            margin-top:10px;
+            margin-top: 10px;
             margin-left: 240px;
+            border: 1px solid #343A40;
+        }
+
+        .relation{
+            display: flex;
+            align-items: center;
+        }
+
+        .alwaysright{
+            margin-left: 4vw;
+        }
+
+        .text{
+            resize: none;
+        }
+
+        .jessa{
+            font-weight: 400;
+            font-size: 18px;
+            margin-top: 27px;
+            color: #98002E;
+;
+            margin-left: 25vw;
         }
 
 
-                           /* eight phase */
+        /* eight phase */
 
 
-        .eight{
-           width: 100%;
-            height: 1200px;
-           
-            margin-top: 12px;
-           
+        .eight {
+            width: 100%;
+            margin-top: 70px;
         }
 
-        .pehla{
+        .pehla {
             width: 422px;
             height: 235px;
             background: linear-gradient(180deg, #98002E 22.4%, #7B0025 100%);
             text-align: center;
-            margin-left: 500px;
+            margin-left: 448px;
             margin-top: 40px;
 
 
-        }           
-
-        .writing{
-            width: 305px;
-            height: 24px;
-            font-size: 22px;
-            font-weight: 400;
-            font-family: 'Dancing Script', cursive;
-            font-family: 'Poppins', sans-serif;
-            color: white;
-            margin-left: 20px;
-            
-
-           
-
-
-
         }
 
-        .play{
-           margin-top: 60px;
-        }
+    
 
-        .dosra{
-            margin-top: 100px;
+        .dosra {
+            margin-top: 90px;
             width: 21.51px;
             height: 29.99px;
-            margin-left: 420px;
+            margin-left: 410px;
 
 
         }
 
 
-        .thisra{
-           display: flex;
-           margin-top: 170px;
-           width: 100%;
-           height: 200px;
-        
+        .thisra {
+            display: flex;
+            margin-top: 170px;
+            width: 100%;
+            height: 200px;
+
 
 
         }
-        .abu{
+
+        .abu {
             width: 50%;
             height: 200px;
-            
+
         }
 
-        .aizaz{
+        .aizaz {
             width: 50%;
             height: 200px;
-           
-           
+
+
         }
-        .aizaz h3{
+
+        .aizaz h3 {
             color: #454545;
             font-family: 'Dancing Script', cursive;
             font-family: 'Poppins', sans-serif;
@@ -501,7 +615,7 @@
         }
 
 
-        .abu h3{
+        .abu h3 {
             color: #454545;
             font-family: 'Dancing Script', cursive;
             font-family: 'Poppins', sans-serif;
@@ -510,8 +624,8 @@
             text-align: center;
         }
 
-        .abu p{
-            color: #7B0025;
+        .abu p {
+              color: #7B0025;
             font-family: 'Dancing Script', cursive;
             font-family: 'Poppins', sans-serif;
             font-weight: 600;
@@ -523,13 +637,14 @@
         }
 
 
-        .linkslogo{
+        .linkslogo {
             display: flex;
             margin-top: 22px;
-            
+
 
         }
-        .linkslogo h3{
+
+        .linkslogo h3 {
             margin-left: 28px;
         }
 
@@ -537,32 +652,58 @@
 
 
 
-    
+
+
+        .chotha{
+            max-width: 100%;
+            display: flex;
+            
+
+        }
+
+        .ugly{
+         display: flex;
+         gap: 25px;
+         margin-left: 8vw;
+
+        }
+
+        .ugly h3{
+            font-family: Poppins;
+            font-weight: 400;
+            font-size: 12.8px;
+            color: #454545;
+        }
+
+
+
+        .beauty{
+         margin-left: 3vw;
+         font-family: Poppins;
+         font-weight: 400;
+         font-size: 12.8px;
+         align-items: center;
+
+        }
     </style>
 </head>
 
-<body>             
+<body>
+     <div class="container-fluid">
     <div class="container">
         <div class="first">
+         <div class="navbar">
+                        <div class="pictrure22 "><img src="logo(1).png" alt="" class="logo1"></div>
+                        <div class="buyer laptop">Buyer <img src="extension.png" alt="" class="extension"></div>
+                        <div class="seller laptop">Seller <img src="extension.png" alt="" class="extension"></div>
+                        <div class="Investment laptop">Investment <img src="extension.png" alt="" class="extension"></div>
+                        <div class="property laptop">Property management <img src="extension.png" alt="" class="extension"></div>
+                        <div class="search laptop"> <img src="search.png" alt=""></div>
+                        <div class="Agent laptop">About <img src="extension.png" alt="" class="extension"></div>
+                        <div class="Agent laptop">Agent </div>
+                        <div class="contact laptop">contact</div>
+                        <div class="hamburger laptop"><i class="ri-menu-line"></i></div>
 
-            <div class="navbar">
-                <div class="logo">
-                    <img src="logo.png" alt="" class="logo1">
-                </div>
-
-                <div class="center">
-                    <ul>
-                        <li><a href="#">Buyer</a></li>
-                        <li><a href="#">Seller</a></li>
-                        <li><a href="#">Investors</a></li>
-                        <li><a href="#">property management</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Agents</a></li>
-                        <li><a href="#" class="contact">Contact</a></li>
-                    </ul>
-
-
-                </div>
             </div>
 
 
@@ -581,17 +722,12 @@
 
 
         </div>
-
-
-
-
-
-
-
         <div class="second">
             <div class="left1">
                 <h2>MIKE KOEN</h2>
-                <P>Real State is more then mym passion. <br>its my <b>purpose</b></P>
+                <p>
+                    “Real Estate is more than my passion. <br> 
+                    It’s my  <b>purpose.</b>”</p>
             </div>
             <div class="right2">
                 <img src="child.png" alt="" class="baby">
@@ -599,34 +735,38 @@
         </div>
 
 
-
         <div class="third">
             <div class="one">
-                <h3>Experience</h3>
+                <h3 class="aone">Experience</h3>
 
-                <p>With over 25+ years of experience in residential and commercial real estate, Mike Koen has helped
+                <p class="para1 para">With over 25+ years of experience in residential and commercial real estate, Mike Koen has helped
                     <br> hundreds of New Jersey residents secure properties that build lasting memories and financial
                     <br> independence. He takes pride in working with his clients to navigate the complex process of
-                    buying,<br> selling, building, and investing.</p>
+                    buying,<br> selling, building, and investing.
+                </p>
             </div>
-            <div class="two">
-                <img src="green.png" alt="" class="green">
+            <div class="criticalpic">      
+                <img src="green.png" alt="">
             </div>
+
+
+
+           
             <div class="three">
-                <p>Mike is more than a real estate agent. He is also a Licensed Builder and has served as a Home
+                <p class="para2 para">Mike is more than a real estate agent. He is also a Licensed Builder and has served as a Home
                     Inspector <br> for the State of NJ. After years in the field, he uses his experience to help owners
-                    and investors navigate <br> the complexities of NJ real estate and lending.</p>
+                    and investors navigate <br> the complexities of NJ real estate and lending.</p> 
             </div>
         </div>
 
-
+         
+        
         <div class="fourth">
-
-            <div class="single boxes">
+        <div class="single boxes">
                 <p>Serving as a state building <br> inspector for over 10 years, he <br> holds vast knowledge in <br>
                     property management,<br> subdivision protocols, and has <br> extensive experience <br> collaborating
                     with DEP/ <br>municipalities. <br>
-                    <br><br> </br>
+                    <br>
 
 
 
@@ -644,14 +784,10 @@
 
 
         <div class="fifth">
-            <h3>Accreditations</h3>
-            <p>Mike holds an NJ builders license  🚨which we need to get the numbers for.</p>
+            <h3 class="h3compulsory">Accreditations</h3>
+            <p class="pcompulsory"><i>Mike holds an NJ builders license ---> 🚨which we need to get the numbers for.</i></p>
         </div>
 
-
-
-
-        
 
         <div class="sixth">
             <div class="box4">
@@ -708,18 +844,24 @@
             <div class="gas">
                 <p class="date">June 11, 2023</p>
                 <br>
-                <p class="quote">“We are so happy with quick example text <br> to build on the <br> card title and make
-                    up the bulk of the card's content.”</p>
+                <div class="relation">
+            
+                    <img src="left.png" alt=""> 
+                    <p class="quote">“We are so happy with quick example text <br> to build on the  card title and make
+                    up the <br> bulk of the card's content.”</p>
+                    <img src="right.png" alt="" class="alwaysright">
+                </div>
+                <p class="jessa">Jesse A.</p>
             </div>
 
             <div class="khay">
-                <textarea name="" id="" cols="" rows="" placeholder="Leave a review" class="text"></textarea>
+                <textarea name="" id="" cols="" rows="" placeholder="Leave a review..." class="text" ></textarea>
                 <div class="btn">
                     <button>Post</button>
                 </div>
-                
 
-            </div> 
+
+            </div>
         </div>
 
 
@@ -727,7 +869,7 @@
 
 
 
-
+                                                
 
 
 
@@ -735,35 +877,56 @@
 
         <div class="eight">
             <div class="pehla">
-                <div class="writing">
-                    <p class="alone">Discover MIKE KOEN Careers</p>  
-                </div>
-               <div class="play">
-               <img src="play.png" alt=""> 
-            </div> 
+              <img src="playing.png" alt="">
+
+                <!-- <div class="writing">
+                    <p class="alone">Discover MIKE KOEN Careers</p>
+                </div> -->
+                <!-- <div class="play">
+                    <img src="play.png" alt="">
+                </div> -->
             </div>
 
             <div class="dosra">
-                    <img src="logo.png" alt=""   class="me" >
+                <img src="logo.png" alt="" class="me">
             </div>
 
             <div class="thisra">
-              <div class="abu">
-                <h3>Sales & Support</h3>
-                <p>732.475.7705</p>
-              </div>
-              <div class="aizaz">
-                <h3>contact@MikeKoenRealtyNJ.com</h3>
-                  <div class="linkslogo">
-                    <h3><img src="Facebook.png" alt=""></h3>
-                    <h3><img src="Instagram.png" alt=""></h3>
-                    <h3><img src="Pinterest.png" alt=""></h3>
-                    <h3><img src="Youtube.png" alt=""></h3>
-                  </div> 
-              </div>
+                <div class="abu">
+                    <h3>Sales & Support</h3>
+                    <p>732.475.7705</p>
+                </div>
+                <div class="aizaz">
+                    <h3>contact@MikeKoenRealtyNJ.com</h3>
+                    <div class="linkslogo">
+                        <h3><img src="Facebook.png" alt=""></h3>
+                        <h3><img src="Instagram.png" alt=""></h3>
+                        <h3><img src="Pinterest.png" alt=""></h3>
+                        <h3><img src="Tiktok.png" alt=""></h3>
+                        <h3><img src="Youtube.png" alt=""></h3>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        <div class="chotha">
+            <div class="ugly">
+                <h3>Privacy Policy</h3>
+                <h3>Terms of Use</h3>
+                <h3>Site Map</h3>
+                <h3>Home</h3>
+
+            </div>
+            <div class="beauty">
+                   <p>© 2023 Mike Koen Realty LLC, All rights reserved. | ShoreSite Web Designs LLC</p>
             </div>
         </div>
+        </div>
     </div>
+</div>
 </body>
 
 </html>
